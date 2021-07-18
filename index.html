@@ -5,9 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Live Search</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="container pt-2 ">
+		<div class="row mb-3">
+			<div class="col-sm-12">
+			  <div class="form-group">
+			    <label for="bookName" class="label-control">Search Your Book Name : </label>
+			   <input class="form-control form-control-lg" type="text" placeholder="Book Name" name="bookName" id="bookName" onkeyup="searchBook()">
+			  </div>
+		</div>
+		</div>
+		<hr>
 		<div class="row m-0 m-auto" id="items"></div>
 	</div>
 	<script src="script.js"></script>
